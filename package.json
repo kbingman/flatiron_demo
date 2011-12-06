@@ -12,12 +12,14 @@
   },
   "licenses": [{"type": "MIT"}],
   "dependencies": {
+    "flatiron": "0.1.4",
     "broadway": "0.1.2",
     "optimist": "0.2.8",
     "prompt": "0.1.10",
-    "director": "1.0.6",
+    "director": "1.0.7",
+    "plates": "0.2.2",
     "pkginfo": "0.2.2",
-    "ecstatic": "0.1.1"
+    "ecstatic": "0.1.1-1"
   },
   "main": "./lib/flatiron"
 }

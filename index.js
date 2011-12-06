@@ -1,9 +1,9 @@
 var fs = require('fs'),
   path = require('path'),
-  favicon = require('./middleware/favicon'),
+  // favicon = require('./middleware/favicon'),
   ecstatic = require('ecstatic'),
   plates = require('plates'),
-  flatiron = require('../../lib/flatiron'),
+  flatiron = require('flatiron'),
   app = flatiron.app;
   
 
@@ -12,7 +12,7 @@ var fs = require('fs'),
 // Union and Director
 app.use(flatiron.plugins.http, {
   before: [
-    favicon(path.join(__dirname, './favicon.png')),
+    // favicon(path.join(__dirname, './favicon.png')),
     ecstatic(__dirname + '/public', {
       cache: 2,
       autoIndex: false
@@ -58,6 +58,8 @@ app.router.get('/', function () {
     'body': 'body goes here'
   }
   app.render(this.res, 'index', data);
+  // his.res.writeHead(200, { 'Content-Type': 'text/plain' });
+  // his.res.end('Hello World');
 });
 
 app.router.get('/foo/?', function () {
@@ -82,7 +84,7 @@ app.router.get('/foo/?', function () {
 //   });
 // });
 
-app.log.info('something');
+// app.log.info('something');
 
 app.start(8080, function () {
   console.log('flatiron with http running on 8080');
