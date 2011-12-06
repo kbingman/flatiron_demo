@@ -8,6 +8,9 @@
         console.log(data);
         socket.emit('my other event', { my: 'data' });
       });
+      socket.on('disconnect', function () {
+        alert('disconnected')
+      });
     </script>
   </head>
   <body>
