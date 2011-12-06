@@ -8,9 +8,13 @@ body {
 
 h1 {
   font-size: 2em;
-  font-family: 'Gotham';
-  font-weight: 100;
+  font-family: 'Gotham', 'Helvetica Neue', arial, helvetica, sans-serif;
+  font-weight: 300;
   text-transform: uppercase;
+}
+
+section {
+  font-weight: 400;
 }
 
 code {
