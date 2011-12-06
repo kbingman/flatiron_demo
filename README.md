@@ -4,4 +4,4 @@ To run, first you need to install the Node Packages:
 
 then just start the server
   
-  node index.js
+  node server.js

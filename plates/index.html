@@ -1,6 +1,14 @@
 <htm1>
   <head>
     <link rel="stylesheet" type="text/css" media="screen"  href="/css/test.css" />
+    <script src="/js/socket.io.js"></script>
+    <script>
+      var socket = io.connect('http://localhost');
+      socket.on('news', function (data) {
+        console.log(data);
+        socket.emit('my other event', { my: 'data' });
+      });
+    </script>
   </head>
   <body>
     <h1 data-bind="title"></h1>

@@ -19,7 +19,8 @@
     "director": "1.0.7",
     "plates": "0.2.2",
     "pkginfo": "0.2.2",
-    "ecstatic": "0.1.1-1"
+    "ecstatic": "0.1.1-1",
+    "socket.io": "0.8.7"
   },
   "main": "./lib/flatiron"
 }
