@@ -1,0 +1,19 @@
+body {
+  background: #555;
+  color: white;
+  font-size: 100%;
+  font-family: 'Gotham';
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: 'Gotham';
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+code {
+  font-size: 1.14em;
+  font-weight: 600;
+}

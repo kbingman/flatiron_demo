@@ -1,0 +1,8 @@
+.DS_Store
+.idea
+.bundle
+.sass-cache 
+*.log
+*.swp
+
+node_modules

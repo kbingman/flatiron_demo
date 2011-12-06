@@ -1,0 +1,23 @@
+{
+  "name": "hello_world",
+  "description": "A simple hello world app in Node.js and Flatiron",
+  "version": "0.0.2",
+  "author": "Simplificator",
+  "contributors": [
+    { "name": "Keith Bingman", "email": "keith.bingman@simplificator.com" }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/kbingman/flatiron.git" 
+  },
+  "licenses": [{"type": "MIT"}],
+  "dependencies": {
+    "broadway": "0.1.2",
+    "optimist": "0.2.8",
+    "prompt": "0.1.10",
+    "director": "1.0.6",
+    "pkginfo": "0.2.2",
+    "ecstatic": "0.1.1"
+  },
+  "main": "./lib/flatiron"
+}
